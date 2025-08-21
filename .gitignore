@@ -1,0 +1,6 @@
+# Node.js loyihalar uchun misol
+node_modules/
+.env
+dist/
+*.log
+coverage/

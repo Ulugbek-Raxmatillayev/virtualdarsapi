@@ -3,15 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll --coverage"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "config": "^4.1.1",
     "express": "^5.1.0",
     "joi": "^18.0.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.17.1",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "winston": "^3.17.0",
+    "winston-mongodb": "^7.0.1"
+  },
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "supertest": "^7.1.4"
   }
 }
