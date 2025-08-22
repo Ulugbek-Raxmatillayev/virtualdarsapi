@@ -1,4 +1,5 @@
 //admin uchun register yani admin qushish dasturchi uchun 
+const secretkeys = require('../helpers/secretkeys')
 const authAdmin = (req, res, next) => {
     try {
         const decoded = jwt.verify(token, secretkeys.admin);
