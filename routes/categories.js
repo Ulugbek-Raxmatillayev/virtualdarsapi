@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
     res.send(categories);
 });
 
-router.post('/', [auth, authAdmin], async (req, res) => {
+router.post('/', authAdmin, async (req, res) => {
     const { error } = validateCategory(req.body);
     if (error) {
         return res.status(400).send(error.details[0].message);
