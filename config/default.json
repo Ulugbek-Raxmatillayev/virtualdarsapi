@@ -1,4 +1,4 @@
 {
     "jwtPrivateKey": "",
-    "db": "mongodb://localhost/virtualdars"
+    "db": "mongodb+srv://ulugbekraxmatillayev615:ulugbekr615@cluster0.srkdz8x.mongodb.net/virtualdars?retryWrites=true&w=majority&appName=Cluster0"
 }
