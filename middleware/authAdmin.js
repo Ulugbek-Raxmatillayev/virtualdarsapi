@@ -10,7 +10,7 @@ const authAdmin = (req, res, next) => {
         const token = authHeader.split(' ')[1]; // "Bearer" dan keyingi qismni olish
         if (!token) return res.status(401).json({ msg: 'Token berilmagan' });
 
-        const decoded = jwt.verify(token, secretkeys.admin);
+        const decoded = jwt.verify(token, secretkeys.secretkeys.admin);
 
         if (decoded.role !== "role_admin")
             return res.status(403).json({ msg: 'Faqat admin uchun', success: false });
