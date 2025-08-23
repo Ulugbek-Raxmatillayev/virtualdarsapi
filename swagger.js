@@ -11,7 +11,7 @@ const doc = {
             url: "http://localhost:5000"
         },
         {
-            url: "https://virtualdarsapi.onrender.com/api"
+            url: "https://virtualdarsapi.onrender.com"
         }
     ],
     tags: [
