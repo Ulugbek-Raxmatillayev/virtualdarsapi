@@ -6,6 +6,9 @@ const auth = require('../middleware/auth');
 const authAdmin = require('../middleware/authAdmin');
 const mongoose = require('mongoose')
 
+//Categories
+// #swagger.tags = ['Categories']
+// #swagger.description = 'Yangi kategoriya qo‘shish'
 router.get('/', async (req, res) => {
     // throw new Error('Kitlgan xatolik')
     const categories = await Category.find().sort('name');

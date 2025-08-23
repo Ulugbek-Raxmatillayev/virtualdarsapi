@@ -5,7 +5,8 @@ const auth = require('../middleware/auth');
 const authAdmin = require('../middleware/authAdmin');
 const router = express.Router();
 
-//courses qo'shish apisi
+//Courses
+
 router.post('/', [auth, authAdmin], async (req, res) => {
     const { error } = validateCourse(req.body)
     if (error) {
