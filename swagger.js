@@ -9,6 +9,9 @@ const doc = {
     servers: [
         {
             url: "http://localhost:5000"
+        },
+        {
+            url: "https://virtualdarsapi.onrender.com/api"
         }
     ],
     tags: [
