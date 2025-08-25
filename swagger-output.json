@@ -34,7 +34,10 @@
   "paths": {
     "/api/categories/": {
       "get": {
-        "description": "",
+        "tags": [
+          "Categories"
+        ],
+        "description": "Categories get api",
         "responses": {
           "200": {
             "description": "OK"
@@ -42,7 +45,10 @@
         }
       },
       "post": {
-        "description": "",
+        "tags": [
+          "Categories"
+        ],
+        "description": "Add new category",
         "parameters": [
           {
             "name": "authorization",
@@ -80,7 +86,10 @@
     },
     "/api/categories/{id}": {
       "get": {
-        "description": "",
+        "tags": [
+          "Categories"
+        ],
+        "description": "Get category by id",
         "parameters": [
           {
             "name": "id",
@@ -107,7 +116,10 @@
         }
       },
       "put": {
-        "description": "",
+        "tags": [
+          "Categories"
+        ],
+        "description": "Update category",
         "parameters": [
           {
             "name": "id",
@@ -157,7 +169,10 @@
         }
       },
       "delete": {
-        "description": "",
+        "tags": [
+          "Categories"
+        ],
+        "description": "Delete category",
         "parameters": [
           {
             "name": "id",
@@ -194,7 +209,10 @@
     },
     "/api/customers/": {
       "get": {
-        "description": "",
+        "tags": [
+          "Customers"
+        ],
+        "description": "Customers get api",
         "responses": {
           "200": {
             "description": "OK"
@@ -202,7 +220,10 @@
         }
       },
       "post": {
-        "description": "",
+        "tags": [
+          "Customers"
+        ],
+        "description": "Add new customer",
         "parameters": [
           {
             "name": "body",
@@ -235,7 +256,10 @@
     },
     "/api/customers/{id}": {
       "get": {
-        "description": "",
+        "tags": [
+          "Customers"
+        ],
+        "description": "Customer get by id",
         "parameters": [
           {
             "name": "id",
@@ -254,7 +278,10 @@
         }
       },
       "put": {
-        "description": "",
+        "tags": [
+          "Customers"
+        ],
+        "description": "Update customer",
         "parameters": [
           {
             "name": "id",
@@ -294,7 +321,10 @@
         }
       },
       "delete": {
-        "description": "",
+        "tags": [
+          "Customers"
+        ],
+        "description": "Delete customer",
         "parameters": [
           {
             "name": "id",
@@ -315,7 +345,10 @@
     },
     "/api/courses/": {
       "post": {
-        "description": "",
+        "tags": [
+          "Courses"
+        ],
+        "description": "Courses post api",
         "parameters": [
           {
             "name": "Authorization",
@@ -368,7 +401,10 @@
         }
       },
       "get": {
-        "description": "",
+        "tags": [
+          "Courses"
+        ],
+        "description": "Courses get api",
         "parameters": [
           {
             "name": "Authorization",
@@ -391,7 +427,10 @@
     },
     "/api/courses/{id}": {
       "get": {
-        "description": "",
+        "tags": [
+          "Courses"
+        ],
+        "description": "Course get by id api",
         "parameters": [
           {
             "name": "id",
@@ -418,7 +457,10 @@
         }
       },
       "put": {
-        "description": "",
+        "tags": [
+          "Courses"
+        ],
+        "description": "Update course by id",
         "parameters": [
           {
             "name": "id",
@@ -480,7 +522,10 @@
         }
       },
       "delete": {
-        "description": "",
+        "tags": [
+          "Courses"
+        ],
+        "description": "Delete course",
         "parameters": [
           {
             "name": "id",
@@ -517,7 +562,10 @@
     },
     "/api/enrollments/": {
       "post": {
-        "description": "",
+        "tags": [
+          "Enrollments"
+        ],
+        "description": "Enrollment post api",
         "parameters": [
           {
             "name": "Authorization",
@@ -561,7 +609,10 @@
         }
       },
       "get": {
-        "description": "",
+        "tags": [
+          "Enrollments"
+        ],
+        "description": "Enrollment get api",
         "parameters": [
           {
             "name": "Authorization",
@@ -584,7 +635,10 @@
     },
     "/api/enrollments/{id}": {
       "get": {
-        "description": "",
+        "tags": [
+          "Enrollments"
+        ],
+        "description": "Enrollment get by id api",
         "parameters": [
           {
             "name": "id",
@@ -611,7 +665,10 @@
         }
       },
       "put": {
-        "description": "",
+        "tags": [
+          "Enrollments"
+        ],
+        "description": "Enrollment put api",
         "parameters": [
           {
             "name": "id",
@@ -664,7 +721,10 @@
         }
       },
       "delete": {
-        "description": "",
+        "tags": [
+          "Enrollments"
+        ],
+        "description": "Delete enrollment",
         "parameters": [
           {
             "name": "id",
@@ -701,7 +761,10 @@
     },
     "/api/auth/users": {
       "get": {
-        "description": "",
+        "tags": [
+          "Auth"
+        ],
+        "description": "Get users",
         "parameters": [
           {
             "name": "authorization",
@@ -725,7 +788,10 @@
         }
       },
       "post": {
-        "description": "",
+        "tags": [
+          "Auth"
+        ],
+        "description": "Users register",
         "parameters": [
           {
             "name": "body",
@@ -761,7 +827,10 @@
     },
     "/api/auth/users/getMe": {
       "get": {
-        "description": "",
+        "tags": [
+          "Auth"
+        ],
+        "description": "Get me user",
         "parameters": [
           {
             "name": "Authorization",
@@ -787,7 +856,10 @@
     },
     "/api/auth/users/me": {
       "put": {
-        "description": "",
+        "tags": [
+          "Auth"
+        ],
+        "description": "Update me user",
         "parameters": [
           {
             "name": "Authorization",
@@ -840,7 +912,10 @@
     },
     "/api/auth/login": {
       "post": {
-        "description": "",
+        "tags": [
+          "Auth"
+        ],
+        "description": "Login api",
         "parameters": [
           {
             "name": "body",
@@ -873,7 +948,10 @@
     },
     "/api/auth/add-admin": {
       "post": {
-        "description": "",
+        "tags": [
+          "Auth"
+        ],
+        "description": "Add new admin",
         "parameters": [
           {
             "name": "authorization",

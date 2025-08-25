@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to My API</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- 3D Background -->
+    <canvas id="bg"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar" data-aos="fade-down">
+        <div class="logo">🚀 MyAPI</div>
+        <ul>
+            <li><a href="#features">Xususiyatlar</a></li>
+            <li><a href="#about">Biz haqimizda</a></li>
+            <li><a href="#contact">Aloqa</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up">
+        <h1 class="hero-title">API Xizmatiga <span>Hush Kelibsiz!</span></h1>
+        <p class="hero-subtitle">Eng tezkor, xavfsiz va zamonaviy REST API platformasi</p>
+        <a href="/api-docs" class="btn">📘 API Hujjatlari</a>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <h2 data-aos="fade-up">Xususiyatlar</h2>
+        <div class="feature-list">
+            <div class="feature-card" data-aos="zoom-in">
+                <i class="fas fa-bolt"></i>
+                <h3>Yuqori Tezlik</h3>
+                <p>Millisekundlik javob va kuchli cache bilan ishlaydi</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="150">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Xavfsizlik</h3>
+                <p>JWT, HTTPS va barcha xavfsizlik protokollari bilan himoyalangan</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-code"></i>
+                <h3>Yaxshi Hujjat</h3>
+                <p>Swagger bilan hujjatlashtirilgan va sinov uchun qulay</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2 data-aos="fade-right">Biz haqimizda</h2>
+        <p data-aos="fade-left">Biz ishlab chiquvchilar uchun eng mukammal backend API xizmatini yaratmoqdamiz. Har bir
+            detaldagi mukammallik va ishonchlilik – bizning ustuvor vazifamiz.</p>
+    </section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+        <p>© 2025 MyAPI. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
