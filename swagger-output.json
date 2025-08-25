@@ -7,10 +7,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:5000"
+      "url": "https://virtualdarsapi.onrender.com"
     },
     {
-      "url": "https://virtualdarsapi.onrender.com"
+      "url": "http://localhost:5000"
     }
   ],
   "tags": [
